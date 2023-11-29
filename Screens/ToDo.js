@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, FlatList, TextInput, Button, TouchableOpacity } from 'react-native';
-//import AsyncStorage from '@react-native-async-storage/async-storage'; // Import AsyncStorage
 import alert from '../alert';
 
 export default function TaskManager() {
@@ -152,7 +151,7 @@ export default function TaskManager() {
       />
 
       {isAddTaskContainerVisible && (
-        <View style={styles.overlayContainer}>
+        <View>
           <View style={styles.addTaskContainer}>
             <TextInput
               style={styles.input}

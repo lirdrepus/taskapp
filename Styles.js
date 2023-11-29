@@ -2,6 +2,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
 
 module.exports = StyleSheet.create({
   container: {
@@ -66,13 +67,14 @@ module.exports = StyleSheet.create({
      backgroundColor: "green"
   },
   deleteText: {
-     textAlign: "center"
+    textAlign: "center"
   },
   name: {
     fontSize: 18,
     fontWeight: 'bold',
   },
   taskItem: {
+    flexDirection: 'row',
     marginTop: 30,
   },
   description: {
@@ -95,6 +97,15 @@ module.exports = StyleSheet.create({
     resizeMode: 'cover',
   },
   buttonsContainer: {
-    flexDirection: 'row',
+    flexDirection: 'line',
+  },
+  addTaskContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 8,
+    height: screenHeight - 200,
+    width: screenWidth,
+    borderRadius: 15,
+    backgroundColor: 'white',
   },
 });
