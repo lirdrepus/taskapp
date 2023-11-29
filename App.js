@@ -20,7 +20,7 @@ export default function App() {
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Contact" component={Contact} options = {{drawerItemStyle: {display: "none"} }}/>
         <Drawer.Screen name="Settings" component={SettingsScreen} options = {{drawerItemStyle: {display: "none"} }}/>
-        <Drawer.Screen name="ToDo" component={ToDo} />
+        <Drawer.Screen name="Staff Details" component={ToDo} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

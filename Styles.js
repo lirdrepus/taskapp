@@ -67,6 +67,7 @@ module.exports = StyleSheet.create({
      backgroundColor: "green"
   },
   deleteText: {
+    fontWeight: 'bold',
     textAlign: "center"
   },
   name: {

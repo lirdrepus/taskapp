@@ -17,7 +17,7 @@ Staff Contact Information{"\n"}
 Management System</Text>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('ToDo')}>
+        onPress={() => navigation.navigate('Staff Details')}>
         <Text style={styles.buttonText}>Start</Text>
       </TouchableOpacity>
     </View>
